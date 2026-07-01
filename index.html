@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrea Leitnerová — Lash & Brow Studio</title>
+<meta name="description" content="Prodlužování řas, lash filler, laminace obočí a diodová epilace v Příbrami. Preciznost, klid a individuální přístup ke každé klientce.">
+<meta property="og:title" content="Andrea Leitnerová | Lash & Brow Studio">
+<meta property="og:description" content="Preciznost, luxus a individuální přístup v srdci Příbrami.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-mark" id="logoTrigger">
+    <img src="assets/logo.png" alt="Andrea Leitnerová logo">
+    <span>Andrea <em>Leitnerová</em></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">O mně</a></li>
+    <li><a href="#services">Služby</a></li>
+    <li><a href="#pricing">Ceník</a></li>
+    <li><a href="#gallery">Galerie</a></li>
+    <li><a href="#reviews">Recenze</a></li>
+  </ul>
+  <button class="nav-cta" onclick="toggleModal('inquiryModal')">Rezervace</button>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">O mně</a>
+  <a href="#services">Služby</a>
+  <a href="#pricing">Ceník</a>
+  <a href="#gallery">Galerie</a>
+  <a href="#reviews">Recenze</a>
+  <a href="#contact">Kontakt</a>
+</div>
+
+<div class="admin-entry" id="adminEntry">Admin panel →</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg"><img src="https://i.postimg.cc/J0DBrJB1/IMG-1610.jpg" alt="Andrea Leitnerová"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow hero-eyebrow">Lash &amp; Brow Studio · Příbram</span>
+      <h1 class="h-xl"><span><span class="line-inner">Zvýrazněte svou</span></span><span><span class="line-inner"><em class="italic">přirozenou</em> krásu</span></span></h1>
+      <p class="hero-sub">Preciznost, klid a individuální přístup v srdci Příbrami.</p>
+      <div class="hero-cta">
+        <a href="#" class="btn btn-fill magnetic" onclick="toggleModal('inquiryModal');return false;"><span class="btn-line">Rezervovat termín</span></a>
+        <a href="#pricing" class="btn btn-gold magnetic"><span class="btn-line">Zobrazit ceník</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><span class="rail"></span></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="pad about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media reveal">
+      <img src="https://i.postimg.cc/J0DBrJB1/IMG-1610.jpg" alt="Andrea Leitnerová při práci">
+      <div class="curl-tag">
+        <span class="eyebrow">Filozofie</span>
+        <p>„Krása by měla působit jemně a přirozeně.“</p>
+      </div>
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">O mně</span>
+      <h2 class="h-lg" style="margin-top:1rem;">Krása je <em class="italic">v detailu</em></h2>
+      <p class="lead" style="margin-top:1.8rem;">Ve své práci kladu důraz na přirozený výsledek, detail a individuální přístup ke každé klientce. Věřím, že krása by měla působit jemně, upraveně a zároveň přirozeně – tak, abyste se cítila sebevědomě každý den.</p>
+      <p class="lead">Zaměřuji se především na prodlužování řas, lash filler, laminaci obočí a laserovou (diodovou) epilaci. Každé ošetření přizpůsobuji na míru podle typu řas, obočí i pokožky.</p>
+      <blockquote class="quote">Pravidelně se vzdělávám a sleduji nové trendy, abych vám mohla nabídnout kvalitní a moderní služby na vysoké úrovni.</blockquote>
+      <p class="lead">Mým cílem je, abyste odcházela nejen krásnější, ale i odpočatá a spokojená.</p>
+      <div class="specialties">
+        <span>Prodlužování řas</span>
+        <span>Lash filler</span>
+        <span>Laminace obočí</span>
+        <span>Diodová epilace</span>
+      </div>
+      <div class="signature">Andrea Leitnerová</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="pad" id="services" style="background:var(--warm-white);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Expertíza</span>
+      <h2 class="h-lg">Naše služby</h2>
+      <svg class="curl-svg" width="120" height="24" viewBox="0 0 120 24"><path d="M2 12 C 20 -4, 40 28, 60 12 S 100 -4, 118 12"/></svg>
+    </div>
+
+    <div class="service-row reveal">
+      <div class="s-media"><img src="https://i.postimg.cc/j2wJxNJq/IMG-1571.jpg" alt="Prodlužování řas"></div>
+      <div class="s-copy">
+        <span class="s-num">01</span>
+        <h3>Prodlužování řas</h3>
+        <p class="lead">Technika řasa na řasu či objemové prodlužování pro fascinující a přesto přirozený pohled.</p>
+        <p class="lead">Aplikaci vždy přizpůsobuji tvaru očí i vašemu stylu – od jemného přirozeného efektu až po výraznější objem. Dbám na správnou techniku a šetrnost, aby vaše přírodní řasy zůstaly zdravé.</p>
+        <button class="s-link" onclick="openInquiry('Prodlužování řas')">Rezervovat tuto službu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+
+    <div class="service-row reveal">
+      <div class="s-media"><img src="https://i.postimg.cc/kG6tJ8t9/IMG-1609.jpg" alt="Lash filler"></div>
+      <div class="s-copy">
+        <span class="s-num">02</span>
+        <h3>Lash Filler</h3>
+        <p class="lead">Lash filler značky InLei je moderní ošetření, které řasy nejen natočí, ale především hloubkově vyživí a posílí.</p>
+        <p class="lead">Řasy jsou po aplikaci silnější, zdravější a přirozeně zvýrazněné. Efekt vydrží několik týdnů a při opakování se kvalita řas viditelně zlepšuje.</p>
+        <button class="s-link" onclick="openInquiry('Lash filler')">Rezervovat tuto službu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+
+    <div class="service-row reveal">
+      <div class="s-media"><img src="https://i.postimg.cc/rs0tVWtq/IMG-1611.jpg" alt="Laminace obočí"></div>
+      <div class="s-copy">
+        <span class="s-num">03</span>
+        <h3>Laminace obočí</h3>
+        <p class="lead">Laminace obočí pomůže upravit tvar, zvýraznit objem a dodat obočí upravený vzhled.</p>
+        <p class="lead">Ideální řešení pro neposedné, řídké nebo asymetrické obočí. Výsledkem je přirozeně plnější a definované obočí bez každodenní úpravy.</p>
+        <button class="s-link" onclick="openInquiry('Laminace obočí')">Rezervovat tuto službu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+
+    <div class="service-row reveal">
+      <div class="s-media"><img src="https://i.postimg.cc/VsG1f865/IMG-1647.jpg" alt="Diodová epilace"></div>
+      <div class="s-copy">
+        <span class="s-num">04</span>
+        <h3>Laserová / diodová epilace</h3>
+        <p class="lead">Moderní metoda dlouhodobého odstranění chloupků.</p>
+        <p class="lead">Diodová epilace je šetrná a efektivní, pomáhá omezit růst chloupků a zanechává pokožku hladkou bez podráždění a zarůstání.</p>
+        <button class="s-link" onclick="openInquiry('Diodová epilace')">Rezervovat tuto službu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="pad" id="pricing">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Investice do sebe</span>
+      <h2 class="h-lg">Ceník služeb</h2>
+      <svg class="curl-svg" width="120" height="24" viewBox="0 0 120 24"><path d="M2 12 C 20 -4, 40 28, 60 12 S 100 -4, 118 12"/></svg>
+    </div>
+
+    <div class="pricing-tabs reveal">
+      <button class="p-tab active" data-tab="lashes">Řasy</button>
+      <button class="p-tab" data-tab="brows">Obočí</button>
+      <button class="p-tab" data-tab="laser">Diodová epilace</button>
+    </div>
+
+    <div class="p-panel active" data-panel="lashes">
+      <div class="p-item"><div><div class="p-name">Nový set</div><div class="p-desc">Kompletní aplikace pro dokonalý, plný a výrazný pohled.</div></div><div class="p-price">1 800 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Doplnění do 3 týdnů</div><div class="p-desc">Udržení perfektního vzhledu bez zbytečných mezer.</div></div><div class="p-price">950 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Doplnění do 4 týdnů</div><div class="p-desc">Obnova objemu pro stále upravené a krásné řasy.</div></div><div class="p-price">1 200 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Po více než 5 týdnech</div><div class="p-desc">Účtováno jako nový set.</div></div><div class="p-price">—</div></div>
+      <div class="p-item"><div><div class="p-name">Odstranění řas</div><div class="p-desc">Šetrné a bezpečné odstranění bez poškození přírodních řas.</div></div><div class="p-price">350 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Lash filler (InLei)</div><div class="p-desc">Výživa a lifting pro přirozeně hustší, zdravější a natočené řasy.</div></div><div class="p-price">1 000 Kč</div></div>
+    </div>
+
+    <div class="p-panel" data-panel="brows">
+      <div class="p-item"><div><div class="p-name">Úprava obočí (barva + vosk)</div><div class="p-desc">Barvení a vosk pro upravené a přirozeně zvýrazněné obočí.</div></div><div class="p-price">400 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Laminace včetně barvení a úpravy</div><div class="p-desc">Zkrocení chloupků, plnější vzhled a dlouhotrvající tvar.</div></div><div class="p-price">800 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Botox – výživa obočí</div><div class="p-desc">Výživa pro silnější, zdravější a lesklejší obočí.</div></div><div class="p-price">100 Kč</div></div>
+    </div>
+
+    <div class="p-panel" data-panel="laser">
+      <div class="p-item"><div><div class="p-name">Obličej (brada)</div><div class="p-desc">Šetrné odstranění chloupků pro hladkou pokožku bez podráždění.</div></div><div class="p-price">390 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Podpaží</div><div class="p-desc">Dlouhodobě hladké podpaží bez nutnosti častého holení.</div></div><div class="p-price">790 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Ruce (celé)</div><div class="p-desc">Efektivní odstranění chloupků pro jemnou a hladkou pokožku rukou.</div></div><div class="p-price">1 390 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Břicho</div><div class="p-desc">Diskrétní a účinné řešení pro hladkou oblast břicha.</div></div><div class="p-price">1 390 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Záda</div><div class="p-desc">Kompletní epilace zad pro čistý a upravený vzhled.</div></div><div class="p-price">2 100 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Stehna</div><div class="p-desc">Hladká pokožka stehen bez zarůstání chloupků.</div></div><div class="p-price">1 390 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Lýtka</div><div class="p-desc">Dlouhotrvající hladkost a komfort bez každodenního holení.</div></div><div class="p-price">1 390 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Třísla</div><div class="p-desc">Základní oblast linií třísel, větší rozsah po domluvě.</div></div><div class="p-price">1 000 Kč</div></div>
+      <div class="p-item"><div><div class="p-name">Celé nohy</div><div class="p-desc">Komplexní epilace pro dokonale hladké nohy na dlouhou dobu.</div></div><div class="p-price">2 500 Kč</div></div>
+    </div>
+
+    <p class="p-note reveal">Pro kompletní ceník a konzultaci mě prosím kontaktujte.</p>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="pad" id="gallery" style="background:var(--warm-white);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Portfolio</span>
+      <h2 class="h-lg">Ukázka práce</h2>
+      <svg class="curl-svg" width="120" height="24" viewBox="0 0 120 24"><path d="M2 12 C 20 -4, 40 28, 60 12 S 100 -4, 118 12"/></svg>
+    </div>
+    <div class="masonry reveal" id="masonry">
+      <div class="g-item" data-src="https://i.postimg.cc/j2wJxNJq/IMG-1571.jpg"><img src="https://i.postimg.cc/j2wJxNJq/IMG-1571.jpg" alt="Práce 1" loading="lazy"></div>
+      <div class="g-item" data-src="https://i.postimg.cc/kG6tJ8t9/IMG-1609.jpg"><img src="https://i.postimg.cc/kG6tJ8t9/IMG-1609.jpg" alt="Práce 2" loading="lazy"></div>
+      <div class="g-item" data-src="https://i.postimg.cc/J0DBrJB1/IMG-1610.jpg"><img src="https://i.postimg.cc/J0DBrJB1/IMG-1610.jpg" alt="Práce 3" loading="lazy"></div>
+      <div class="g-item" data-src="https://i.postimg.cc/rs0tVWtq/IMG-1611.jpg"><img src="https://i.postimg.cc/rs0tVWtq/IMG-1611.jpg" alt="Práce 4" loading="lazy"></div>
+      <div class="g-item" data-src="https://i.postimg.cc/VsG1f865/IMG-1647.jpg"><img src="https://i.postimg.cc/VsG1f865/IMG-1647.jpg" alt="Práce 5" loading="lazy"></div>
+      <div class="g-item" data-src="https://i.postimg.cc/HWZHYgxL/IMG-1648.jpg"><img src="https://i.postimg.cc/HWZHYgxL/IMG-1648.jpg" alt="Práce 6" loading="lazy"></div>
+      <div class="g-item" data-src="https://i.postimg.cc/90njJGKV/IMG-1649.jpg"><img src="https://i.postimg.cc/90njJGKV/IMG-1649.jpg" alt="Práce 7" loading="lazy"></div>
+      <div class="g-item" data-src="https://i.postimg.cc/90njJGS6/IMG-1650.jpg"><img src="https://i.postimg.cc/90njJGS6/IMG-1650.jpg" alt="Práce 8" loading="lazy"></div>
+      <div class="g-item" data-src="https://i.postimg.cc/J02WPbgF/IMG-1651.jpg"><img src="https://i.postimg.cc/J02WPbgF/IMG-1651.jpg" alt="Práce 9" loading="lazy"></div>
+      <div class="g-item" data-src="https://i.postimg.cc/RhDzXc8P/IMG-1652.jpg"><img src="https://i.postimg.cc/RhDzXc8P/IMG-1652.jpg" alt="Práce 10" loading="lazy"></div>
+      <div class="g-item" data-src="https://i.postimg.cc/Xqz0Qwhk/IMG-1653.jpg"><img src="https://i.postimg.cc/Xqz0Qwhk/IMG-1653.jpg" alt="Práce 11" loading="lazy"></div>
+      <div class="g-item" data-src="https://i.postimg.cc/1XjZJpTY/IMG-1654.jpg"><img src="https://i.postimg.cc/1XjZJpTY/IMG-1654.jpg" alt="Práce 12" loading="lazy"></div>
+      <div class="g-item" data-src="https://i.postimg.cc/sxNRwp8S/IMG-1655.jpg"><img src="https://i.postimg.cc/sxNRwp8S/IMG-1655.jpg" alt="Práce 13" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="pad dark" id="reviews">
+  <div class="wrap">
+    <div class="reviews-top reveal">
+      <div>
+        <span class="eyebrow">Zkušenosti klientek</span>
+        <h2 class="h-lg" style="margin-top:1rem;">Co o nás <em class="italic">říkají</em></h2>
+        <div class="rating-summary" style="margin-top:1.4rem;">
+          <span class="rating-num" id="ratingNum">5.0</span>
+          <div><div class="rating-stars" id="ratingStars">★★★★★</div><span style="font-size:.78rem;color:rgba(255,253,249,.5);" id="ratingCount">na základě recenzí klientek</span></div>
+        </div>
+      </div>
+      <button class="btn btn-gold magnetic" onclick="toggleModal('reviewModal')"><span class="btn-line">Napsat recenzi</span></button>
+    </div>
+    <div class="marquee-viewport reveal">
+      <div class="marquee-track" id="reviewsContainer"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="contact-grid dark">
+    <div class="contact-info">
+      <span class="eyebrow">Rezervace</span>
+      <h2 class="h-lg" style="margin-top:1rem;margin-bottom:2.6rem;">Kontaktujte <em class="italic">mě</em></h2>
+      <div class="c-item">
+        <h4>Adresa</h4>
+        <p>K Podlesí 626, Příbram <span style="font-family:var(--body);font-size:.85rem;color:var(--taupe);display:block;">261 01</span></p>
+      </div>
+      <div class="c-item">
+        <h4>Instagram</h4>
+        <a href="https://www.instagram.com/andrea_leitnerova_?igsh=MTRpb2JtdmVwejhxMw==" target="_blank" rel="noopener">@andrea_leitnerova_</a>
+      </div>
+      <div class="c-item">
+        <h4>Telefon</h4>
+        <a href="tel:+420605549052">+420 605 549 052</a>
+      </div>
+      <button class="btn btn-gold magnetic" style="margin-top:1rem;width:fit-content;" onclick="toggleModal('inquiryModal')"><span class="btn-line">Poslat poptávku</span></button>
+    </div>
+    <div class="contact-map">
+      <iframe src="https://www.google.com/maps?q=49.6910744,13.9943287&hl=cs&z=16&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Andrea Leitnerová — <em>Lash &amp; Brow Studio</em>. Všechna práva vyhrazena.
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose">×</span>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<!-- Review modal -->
+<div class="modal" id="reviewModal">
+  <div class="modal-box">
+    <span class="modal-close" onclick="toggleModal('reviewModal')">×</span>
+    <h3>Podělte se o zkušenost</h3>
+    <form id="reviewForm">
+      <div class="f-group"><label for="revName">Vaše jméno</label><input type="text" id="revName" required placeholder="Např. Karolína"></div>
+      <div class="f-group">
+        <label for="revRating">Hodnocení</label>
+        <select id="revRating" required>
+          <option value="5">★★★★★ (5/5)</option>
+          <option value="4">★★★★☆ (4/5)</option>
+          <option value="3">★★★☆☆ (3/5)</option>
+          <option value="2">★★☆☆☆ (2/5)</option>
+          <option value="1">★☆☆☆☆ (1/5)</option>
+        </select>
+      </div>
+      <div class="f-group"><label for="revText">Vaše zkušenost</label><textarea id="revText" rows="4" required placeholder="Jak jste byla se službami spokojena?"></textarea></div>
+      <button type="submit" class="btn btn-dark" style="width:100%;justify-content:center;" id="submitBtn"><span class="btn-line">Odeslat recenzi</span></button>
+    </form>
+  </div>
+</div>
+
+<!-- Inquiry / booking-request modal -->
+<div class="modal" id="inquiryModal">
+  <div class="modal-box">
+    <span class="modal-close" onclick="toggleModal('inquiryModal')">×</span>
+    <h3>Poslat poptávku</h3>
+    <p class="modal-sub">Napište mi, o jakou službu máte zájem a kdy by se vám to hodilo. Ozvu se vám a termín společně potvrdíme.</p>
+    <form id="inquiryForm">
+      <div class="f-group"><label for="iqName">Jméno a příjmení</label><input type="text" id="iqName" required placeholder="Např. Karolína Nová"></div>
+      <div class="f-group"><label for="iqContact">Telefon nebo e-mail</label><input type="text" id="iqContact" required placeholder="+420 xxx xxx xxx"></div>
+      <div class="f-group">
+        <label for="iqService">Služba</label>
+        <select id="iqService" required>
+          <option value="">Vyberte službu</option>
+          <option>Prodlužování řas</option>
+          <option>Lash filler</option>
+          <option>Laminace obočí</option>
+          <option>Diodová epilace</option>
+          <option>Jiné / nevím</option>
+        </select>
+      </div>
+      <div class="f-row">
+        <div class="f-group"><label for="iqDate">Preferované datum</label><input type="date" id="iqDate"></div>
+        <div class="f-group"><label for="iqTime">Preferovaný čas</label><input type="time" id="iqTime"></div>
+      </div>
+      <div class="f-group"><label for="iqNote">Poznámka</label><textarea id="iqNote" rows="3" placeholder="Cokoliv, co bych měla vědět předem"></textarea></div>
+      <button type="submit" class="btn btn-fill" style="width:100%;justify-content:center;color:var(--warm-white);" id="inquirySubmitBtn"><span class="btn-line">Odeslat poptávku</span></button>
+      <p class="form-note">Nejde o závaznou rezervaci — termín potvrdím zpětně telefonicky nebo e-mailem.</p>
+    </form>
+    <div class="form-success" id="inquirySuccess">
+      <div class="check">✓</div>
+      <h3 style="margin-bottom:.6rem;">Poptávka odeslána</h3>
+      <p style="font-size:.9rem;color:var(--taupe);">Děkuji! Ozvu se vám co nejdříve a termín potvrdíme.</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

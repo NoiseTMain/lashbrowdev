@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin | Andrea Leitnerová</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-body">
+
+<!-- ============ LOGIN ============ -->
+<div class="admin-login" id="loginScreen">
+  <div class="admin-login-box">
+    <img src="assets/logo.png" alt="Logo">
+    <h1>Admin panel</h1>
+    <p class="sub">Přihlaste se pro zobrazení poptávek</p>
+    <form id="loginForm">
+      <div class="f-group">
+        <label for="loginEmail">E-mail</label>
+        <input type="email" id="loginEmail" required autocomplete="username">
+      </div>
+      <div class="f-group">
+        <label for="loginPass">Heslo</label>
+        <input type="password" id="loginPass" required autocomplete="current-password">
+      </div>
+      <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;" id="loginBtn"><span class="btn-line">Přihlásit se</span></button>
+      <p class="admin-error" id="loginError">Nesprávný e-mail nebo heslo.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ DASHBOARD ============ -->
+<div class="admin-dash" id="dashboard">
+  <div class="admin-header">
+    <div class="nav-mark"><img src="assets/logo.png" alt="Logo"><span>Andrea <em>Leitnerová</em></span></div>
+    <button class="admin-logout" id="logoutBtn">Odhlásit se</button>
+  </div>
+
+  <div class="admin-main">
+    <span class="eyebrow" style="margin-bottom:.6rem;">Přehled</span>
+    <h2 class="h-lg" style="margin-bottom:2.4rem;">Poptávky klientek</h2>
+
+    <div class="admin-stats">
+      <div class="stat-card"><div class="num" id="statTotal">0</div><div class="label">Celkem poptávek</div></div>
+      <div class="stat-card"><div class="num" id="statNew">0</div><div class="label">Nevyřízené</div></div>
+      <div class="stat-card"><div class="num" id="statDone">0</div><div class="label">Vyřízené</div></div>
+    </div>
+
+    <div class="admin-filters">
+      <button class="filter-btn active" data-filter="all">Vše</button>
+      <button class="filter-btn" data-filter="new">Nevyřízené</button>
+      <button class="filter-btn" data-filter="done">Vyřízené</button>
+    </div>
+
+    <div class="inquiry-list" id="inquiryList"></div>
+    <div class="empty-state" id="emptyState" style="display:none;">
+      <h3>Zatím žádné poptávky</h3>
+      <p>Jakmile klientka odešle poptávku z webu, objeví se tady.</p>
+    </div>
+  </div>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
